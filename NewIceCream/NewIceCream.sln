@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewIceCream", "NewIceCream.csproj", "{45B1D7BF-D48A-444A-AF2A-7AD3C197F6B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewIceCream", "NewIceCream.csproj", "{45B1D7BF-D48A-444A-AF2A-7AD3C197F6B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{FF809683-E1D9-4A9D-85EF-2D318A6BADCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewIceCream.DAL", "..\NewIceCream.DAL\NewIceCream.DAL.csproj", "{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{45B1D7BF-D48A-444A-AF2A-7AD3C197F6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B1D7BF-D48A-444A-AF2A-7AD3C197F6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B1D7BF-D48A-444A-AF2A-7AD3C197F6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF} = {FF809683-E1D9-4A9D-85EF-2D318A6BADCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCB4BFD4-12B0-409D-ADCA-76FB464B137B}
