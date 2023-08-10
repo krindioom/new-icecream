@@ -1,0 +1,17 @@
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.DAL.deps.json
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.DAL.runtimeconfig.json
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.DAL.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.DAL.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.Domain.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\bin\Debug\net6.0\NewIceCream.Domain.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.csproj.AssemblyReference.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.AssemblyInfoInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.AssemblyInfo.cs
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.csproj.CoreCompileInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.csproj.CopyComplete
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\refint\NewIceCream.DAL.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\NewIceCream.DAL.genruntimeconfig.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.DAL\obj\Debug\net6.0\ref\NewIceCream.DAL.dll

@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{FF809683-E1D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewIceCream.DAL", "..\NewIceCream.DAL\NewIceCream.DAL.csproj", "{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DB73C110-84D4-4729-B7BD-635B67410344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewIceCream.Domain", "..\NewIceCream.Domain\NewIceCream.Domain.csproj", "{0235A308-4E9B-4433-B3E5-512259EEAAED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0235A308-4E9B-4433-B3E5-512259EEAAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0235A308-4E9B-4433-B3E5-512259EEAAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0235A308-4E9B-4433-B3E5-512259EEAAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0235A308-4E9B-4433-B3E5-512259EEAAED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{95475F25-2BE9-4EB0-8C3F-008DFF6134DF} = {FF809683-E1D9-4A9D-85EF-2D318A6BADCC}
+		{0235A308-4E9B-4433-B3E5-512259EEAAED} = {DB73C110-84D4-4729-B7BD-635B67410344}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCB4BFD4-12B0-409D-ADCA-76FB464B137B}

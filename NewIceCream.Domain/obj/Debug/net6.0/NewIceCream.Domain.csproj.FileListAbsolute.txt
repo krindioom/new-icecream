@@ -1,0 +1,12 @@
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\bin\Debug\net6.0\NewIceCream.Domain.deps.json
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\bin\Debug\net6.0\NewIceCream.Domain.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\bin\Debug\net6.0\NewIceCream.Domain.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.csproj.AssemblyReference.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.AssemblyInfoInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.AssemblyInfo.cs
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.csproj.CoreCompileInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\refint\NewIceCream.Domain.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\NewIceCream.Domain.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Domain\obj\Debug\net6.0\ref\NewIceCream.Domain.dll

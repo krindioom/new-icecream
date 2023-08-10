@@ -1,6 +1,5 @@
-using NewIceCream.DAL;
 using Microsoft.EntityFrameworkCore;
-
+using NewIceCream.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +10,7 @@ var app = builder.Build();
 
 string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<IceCreamDbContext>(option => option.UseSqlServer(connection));
+builder.Services.AddDbContext<IcecreamDbContext>(option => option.UseSqlServer(connection));
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
