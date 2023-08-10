@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NewIceCream.DAL;
+using NewIceCream.DAL.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
