@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a7LkXH8VoJfHGE6zqB8LKgMlRPm/SDjX4FbKXW+YQ9M=",
+  "Hash": "cfGKtWAc6Tr7HeEtbcXLmGxH0hsvdqNg/Rh9gLH0px4=",
   "Source": "NewIceCream",
   "BasePath": "_content/NewIceCream",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NewIceCream.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\css\\main.css",
+      "SourceId": "NewIceCream",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\",
+      "BasePath": "_content/NewIceCream",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
       "Identity": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\css\\site.css",
       "SourceId": "NewIceCream",
       "SourceType": "Discovered",
@@ -83,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\img\\icelogo.com (1).png",
+      "SourceId": "NewIceCream",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\",
+      "BasePath": "_content/NewIceCream",
+      "RelativePath": "img/icelogo.com (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icelogo.com (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\img\\pngwing.com.png",
+      "SourceId": "NewIceCream",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\",
+      "BasePath": "_content/NewIceCream",
+      "RelativePath": "img/pngwing.com.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pngwing.com.png"
     },
     {
       "Identity": "C:\\Users\\yoerf\\source\\repos\\NewIceCream\\Git\\NewIceCream\\wwwroot\\js\\site.js",
