@@ -7,14 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Authorization\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NewIceCream.DAL\NewIceCream.DAL.csproj" />
+    <ProjectReference Include="..\NewIceCream.Domain\NewIceCream.Domain.csproj" />
+    <ProjectReference Include="..\NewIceCream.Service\NewIceCream.Service.csproj" />
   </ItemGroup>
 
 </Project>
