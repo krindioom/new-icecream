@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using NewIceCream.Domain.ViewModels;
 using NewIceCream.Service.Services.Authorizations;
+using Newtonsoft.Json.Linq;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 namespace NewIceCream.Controllers
@@ -16,8 +19,8 @@ namespace NewIceCream.Controllers
             _authorizationService = authorizationService;
         }
 
-        [HttpGet]
-        public IActionResult Login()
+        
+        public IActionResult Register()
         {
             return View();
         }
@@ -31,7 +34,7 @@ namespace NewIceCream.Controllers
             {
                 if (response.Result.StatusCode == Domain.Enums.StatusCode.OK)
                 {
-                    await HttpContext.SignInAsync(JwtBearerDefaults.AuthenticationScheme, 
+                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, 
                         new ClaimsPrincipal(response.Result.Data));
 
                     return RedirectToAction("Index", "Home");

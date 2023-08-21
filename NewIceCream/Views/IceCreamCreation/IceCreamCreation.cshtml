@@ -1,0 +1,65 @@
+﻿@model NewIceCream.Domain.ViewModels.IceCreamComponentsViewModel;
+
+@{
+	Layout = null;
+}
+
+<div>
+	<h1>Шарики:</h1>
+
+	<ul>
+		@foreach (var item in Model.Flavors)
+		{
+			<li><button class="flavor-button" name="@item.FlavorTaste">@item.FlavorTaste</button></li>
+		}
+	</ul>
+
+	<h1>стаканчики:</h1>
+
+	<ul>
+		@foreach (var item in Model.Cones)
+		{
+			<li><button class="cone-button" name="@item.ConeType">@item.ConeType</button></li>
+		}
+	</ul>
+</div>
+
+<form method="get" action="/api/IceCreamBuilding/Build">
+	<button type="submit">собрать</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+	let icecream = {
+		Flavors: [],
+		Cone: null
+	};
+
+	$('.cone-button').on('click', function(){
+		let cone = $(this).attr('name');
+
+		icecream.Cone = cone;
+
+		alert(icecream);
+	});
+
+	$('.flavor-button').on('click', function () {
+		let flavor = $(this).attr('name');
+
+		icecream.Flavors.push(flavor);
+	});
+
+	$('form').on('submit', function(e){
+		e.preventDefault();
+
+		$.ajax({
+			url: '/api/IceCreamBuilding/Build',
+			method: 'POST',
+			contentType: "application/json",
+			data: JSON.stringify(icecream)
+		});
+	});
+</script>
+
+

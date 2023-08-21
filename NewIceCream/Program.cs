@@ -5,28 +5,21 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using NewIceCream.DAL.Repository;
 using NewIceCream.Service.Services.Authorizations;
-using Microsoft.AspNetCore.Authorization;
 using IAuthorizationService = NewIceCream.Service.Services.Authorizations.IAuthorizationService;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using NewIceCream.Service.Services.IceCreamBuilder;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters()
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-                builder.Configuration["Jwt:Key"]))
-        };
-    }
-);
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+{
+    options.LoginPath = "/Authorization/Register";
+});
+
+
+builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 string? connection = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -35,6 +28,8 @@ builder.Services.AddDbContext<IcecreamDbContext>(option => option.UseSqlServer(c
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryProxy<>));
 builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
+builder.Services.AddScoped<IIceCreamCreationService, IceCreamCreationService>();
+builder.Services.AddScoped<IIceCreamBuilderService, IceCreamBuilderService>();
 
 var app = builder.Build();
 

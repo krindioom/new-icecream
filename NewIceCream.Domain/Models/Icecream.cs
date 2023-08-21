@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace NewIceCream.Domain.Models;
 
-public partial class Icecream
+public partial class Icecream: Model
 {
-    public int Id { get; set; }
-
     public int IdCone { get; set; }
 
     public int IdIcecreamCategory { get; set; }

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NewIceCream.DAL\NewIceCream.DAL.csproj" />
     <ProjectReference Include="..\NewIceCream.Domain\NewIceCream.Domain.csproj" />
   </ItemGroup>

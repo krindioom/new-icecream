@@ -1,0 +1,17 @@
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.Service.deps.json
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.Service.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.Service.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.DAL.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.Domain.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.DAL.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\bin\Debug\net6.0\NewIceCream.Domain.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.csproj.AssemblyReference.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.AssemblyInfoInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.AssemblyInfo.cs
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.csproj.CoreCompileInputs.cache
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.csproj.CopyComplete
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\refint\NewIceCream.Service.dll
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\NewIceCream.Service.pdb
+C:\Users\yoerf\source\repos\NewIceCream\Git\NewIceCream.Service\obj\Debug\net6.0\ref\NewIceCream.Service.dll

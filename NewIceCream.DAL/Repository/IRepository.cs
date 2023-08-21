@@ -1,6 +1,8 @@
-﻿namespace NewIceCream.DAL.Repository;
+﻿using NewIceCream.Domain.Models;
 
-public interface IRepository<T> where T : class
+namespace NewIceCream.DAL.Repository;
+
+public interface IRepository<T> where T : Model
 {
     IQueryable<T> GetAll();
 

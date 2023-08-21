@@ -18,7 +18,7 @@ public class UserViewModel
 
     [Required(ErrorMessage = "Повторите пароль")]
     [DataType(DataType.Password)]
-    [Compare("Password", ErrorMessage = "Пароли не совпадают")]
+    [Compare("UserPassword", ErrorMessage = "Пароли не совпадают")]
     public string UserPasswordConfirm { get; set; }
 }
 

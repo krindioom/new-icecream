@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NewIceCream.Domain.Models;
 
 namespace NewIceCream.DAL.Repository;
 
-public class Repository<T> : IRepository<T> where T : class
+public class Repository<T> : IRepository<T> where T : Model
 {
     private readonly IcecreamDbContext _context;
 

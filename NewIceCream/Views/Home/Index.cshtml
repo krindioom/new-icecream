@@ -17,10 +17,13 @@
                             <img id="logo_img" src="/img/icelogo.com (1).png" alt="logo">
                         </a>
                         <ul>
-                            <li><a href="#">войти</a></li>
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li><a href="Authorization/Register">войти</a></li>
+                            }
                             <li><a href="#">каталог</a></li>
                             <li><a href="#">корзина</a></li>
-                            <li><a href="#">конструктор</a></li>
+                            <li><a href="/IceCreamCreation/IceCreamCreation">конструктор</a></li>
                         </ul>
                     </nav>
 
@@ -31,7 +34,7 @@
                             <br> мороженое
                         </p>
 
-                        <a href="#" class="main-create-btn shadow">создать</a>
+                        <a href="/IceCreamBuilder/IceCreamBuilder" class="main-create-btn shadow">создать</a>
                     </div>
                 </div>
 

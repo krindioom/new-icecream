@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NewIceCream.DAL.Repository;
@@ -13,13 +14,10 @@ namespace NewIceCream.Service.Services.Authorizations;
 
 public class AuthorizationService : IAuthorizationService
 {
-    private readonly IConfiguration _configuration;
-
     private readonly IRepository<AppUser> _userRepository;
 
-    public AuthorizationService(IRepository<AppUser> userRepository, IConfiguration configuration)
-    {
-        _configuration = configuration;
+    public AuthorizationService(IRepository<AppUser> userRepository) 
+    { 
         _userRepository = userRepository;
     }
 
@@ -46,7 +44,7 @@ public class AuthorizationService : IAuthorizationService
 
             await _userRepository.Create(user);
 
-            var token = CreateJwtToken(user);
+            var token = Authorize(user);
 
             return new Response<ClaimsIdentity>()
             {
@@ -65,28 +63,17 @@ public class AuthorizationService : IAuthorizationService
         }
     }
 
-    private ClaimsIdentity CreateJwtToken(AppUser user)
+    private ClaimsIdentity Authorize(AppUser user)
     {
         IEnumerable<Claim> claims = new List<Claim>()
         {
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim("Id", user.Id.ToString())
         };
-        var jwtConfig = _configuration.GetSection("Jwt");
+        
+        var identities = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfig.GetSection("Key").Value));
-
-        var token = new JwtSecurityToken(
-                issuer: jwtConfig.GetSection("Issuer").Value,
-                audience: jwtConfig.GetSection("Audience").Value,
-                claims: claims,
-                expires: DateTime.UtcNow.Add(TimeSpan.FromMinutes(2)),
-                signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
-            );
-
-        var identity = new ClaimsIdentity(token.Claims, "jwt");
-
-        return identity;
+        return identities;
     }
 }
 

@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace NewIceCream.Domain.Models;
 
-public partial class AppUser
+public partial class AppUser: Model
 {
-    public int Id { get; set; }
-
     public string UserName { get; set; } = null!;
 
     public string Email { get; set; } = null!;

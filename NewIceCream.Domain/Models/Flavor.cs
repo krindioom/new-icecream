@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace NewIceCream.Domain.Models;
 
-public partial class Flavor
+public partial class Flavor: Model
 {
-    public int Id { get; set; }
-
     public string FlavorTaste { get; set; } = null!;
 
     public decimal Price { get; set; }

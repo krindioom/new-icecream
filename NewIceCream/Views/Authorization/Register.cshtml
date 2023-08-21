@@ -1,0 +1,11 @@
+﻿@model NewIceCream.Domain.ViewModels.UserViewModel;
+
+
+
+<form action="Register" method="post">
+	<input asp-for="UserName" placeholder="логин" name="UserName" />
+	<input asp-for="Email" placeholder="email" name="Email" />
+	<input asp-for="UserPassword" placeholder="пароль" name="UserPassword" />
+	<input asp-for="UserPasswordConfirm" placeholder="повтор пароля" name="UserPasswordConfirm" />
+	<input type="submit" />
+</form>

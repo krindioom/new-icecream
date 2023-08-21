@@ -1,6 +1,8 @@
-﻿namespace NewIceCream.DAL.Repository;
+﻿using NewIceCream.Domain.Models;
 
-public class RepositoryProxy<T> : IRepository<T> where T : class
+namespace NewIceCream.DAL.Repository;
+
+public class RepositoryProxy<T> : IRepository<T> where T : Model
 {
     private readonly Lazy<Repository<T>> _repository;
 
@@ -33,9 +35,19 @@ public class RepositoryProxy<T> : IRepository<T> where T : class
 
     public IQueryable<T> GetAll()
     {
-        if(_entities == null)
+        if(_entities.Count == 0)
         {
             _entities = _repository.Value.GetAll().ToList();
+        }
+
+        return _entities.AsQueryable();
+    }
+
+    public IQueryable<T> GetAll(int id)
+    {
+        if (_entities.Count == 0)
+        {
+            _entities = _repository.Value.GetAll().Where(x => x.Id == id) .ToList();
         }
 
         return _entities.AsQueryable();

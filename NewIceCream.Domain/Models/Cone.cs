@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace NewIceCream.Domain.Models;
 
-public partial class Cone
+public partial class Cone: Model
 {
-    public int Id { get; set; }
-
     public string ConeType { get; set; } = null!;
 
     public decimal Price { get; set; }
